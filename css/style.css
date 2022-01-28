@@ -1,0 +1,350 @@
+/* start body  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* start main */
+main {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* global styles */
+h2 {
+    text-align: center;
+    color: #5a64aa;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 20px;
+
+}
+
+hr {
+    width: 40%;
+    background-color: #c9c9c9;
+    border: none;
+    height: 2px;
+    margin: auto;
+    
+}
+.search{
+    width:200px;
+    height: 60px;
+    position: fixed;
+    background: #000;
+    top:200px;
+    left:-150px;
+    border-radius: 0 25px 25px 0;
+    padding: 5px;
+    z-index:999;
+    cursor: pointer;
+    transition: all 1s;
+}
+.search img{
+    width:40px;
+    position: absolute;
+    right:0;
+    margin: 5px;
+}
+.search input{
+    width:150px;
+    position: absolute;
+    left:0;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 40px;
+}
+.search:hover{
+    left:0px;
+}
+/* start header */
+header {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0, 0, 0, 0.829);
+    position: fixed;
+    top:0;
+    height: 90px;
+    width: 100%;
+    z-index: 99;
+}
+
+header .logo {
+    width: 50%;
+    float: left;
+    
+}
+
+header .logo img {
+    width: 80px;
+    padding-left: 20px;
+    height: 90px;
+}
+
+header .ul1 {
+    width: 50%;
+    float: left;
+}
+
+header .ul1 ul {
+    overflow: hidden;
+}
+
+header .ul1 ul li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    padding: 30px 30px;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 25px;
+   font-weight: bold;
+  
+}
+header .ul1 ul li:hover {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fed404;
+}
+
+.heading {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+
+}
+
+.heading .head {
+    margin: 0;
+    background-color: #fed404;
+    width: 100%;
+    height: 700px;
+}
+
+.heading .head .overlay {
+    height: 800px;
+    background-image: url(../images/banner.jpg);
+    background-size:contain;
+    clip-path: circle(70% at 50% 0);
+    background-repeat: no-repeat;
+}
+
+/* start container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* start first */
+.first {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    top:-150px
+}
+.first .box1 {
+    float: left;
+    width: 22%;
+    height: 160px;
+    border: 2px solid #fed404;
+    margin: 6px;
+    z-index: 2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+}
+
+.first .box1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: #ff05;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: bold;
+    clip-path: circle(0 at 0 0);
+    transition: all 1s;
+}
+.box1:hover .overlay{
+    clip-path: circle(70% at 0 0);
+}
+/* start second */
+.second {
+    overflow: hidden;
+}
+
+.second .about .text {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+   
+}
+
+.second .about .text h5 {
+    color: #5a64aa;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+
+.second .about .text p {
+    color: #5a64aa;
+    width: 90%;
+    padding-left: 15px;
+}
+
+.second .about .text p:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.second .about .pic1 {
+    width: 50%;
+    float: left;
+
+}
+
+.second .about .pic1 img {
+    height: 180px;
+    width: 80%;
+    margin: 12px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+/* start third */
+.thrd {
+    overflow: hidden;
+    height: 300px;
+    
+}
+.thrd table{
+    margin-left: 20%;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.thrd table tr td{
+    padding-right:280px;
+    text-align: center;
+   
+}
+.thrd table tr:nth-child(odd)
+{
+    background-color:#cccccc ;
+}
+/* start fourth */
+.fourth {
+    overflow: hidden;
+}
+.fourth .pic3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.fourth .pic3 .box {
+    width: 30%;
+    height: 400px;
+    float: left;
+    margin: 16px;
+    border: 1px solid;
+
+}
+
+.fourth .pic3 .box img {
+    width: 95%;
+    padding: 10px;
+
+}
+
+.fourth .pic3 .box h6 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-left: 7px;
+
+}
+
+.fourth .pic3 .box p {
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 7px;
+}
+
+/* start fifth */
+.fifth {
+    background-color: #fed404;
+    overflow: hidden;
+    height: 400px;
+}
+
+.fifth .pict {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.fifth .pict img {
+    display: inline-block;
+    width: 95%;
+    height: 95%;
+    margin: 15px;
+}
+
+.fifth .video1 {
+    float: left;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.fifth .video1 iframe {
+    width: 90%;
+    height: 90%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+/* start sixth */
+.sixth {
+    padding: 0;
+    margin: 0;
+}
+
+.sixth map iframe {
+    border: 0;
+    width: 100%;
+    height: 470px;
+}
+
+/* start footer */
+footer {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+}
